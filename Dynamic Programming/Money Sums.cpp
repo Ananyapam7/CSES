@@ -8,6 +8,7 @@ int32_t main() {
     cin>>n;
     bitset<100001> temp;
     temp[0]=1;
+    cout<<temp;
     for(int i=0; i<n; i++){
         int x;
         cin>>x;
@@ -19,6 +20,7 @@ int32_t main() {
             ans.push_back(i);
         }
     }
+    ans.erase(ans.begin());
     cout<<ans.size()<<endl;
     for(auto v:ans){
         cout<<v<<" ";
